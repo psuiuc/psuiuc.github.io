@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3 Visualization</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    svg {
+      width: 800px;
+      height: 500px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Food Adulteration Data</h1>
+  <p>Data Source: https://www.kaggle.com/datasets/fahmidachowdhury/food-adulteration-dataset</p>
+  <div>
+    <button id="product_adulterant">Product vs Adulterant</button>
+    <button id="adulterant_health_risk">Adulterant vs Health Risk</button>
+    <button id="adulterant_severity">Adulterant vs Severity</button>
+    <button id="severity_action_taken">Severity vs Action Taken</button>
+  </div>
+  <h2 id="title"></h2>
+  <p id="description"></p>
+  <div>
+    <button id="bar">Bar Chart View</button>
+    <button id="timeseries">Timeseries View</button>
+  </div>
+  <svg id="d3-container"></svg>
+  <script src="vis.js"></script>
+</body>
+</html>
